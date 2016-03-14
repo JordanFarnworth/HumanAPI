@@ -1,0 +1,56 @@
+<head>
+  <title>human-api</title>
+</head>
+
+<body>
+
+</body>
+
+<template name="Home">
+  <div class="row">
+    <div class="col-md-12 text-center header">
+      <h1>CHAD</h1>
+      <h2>Jordan Farnworth</h2>
+    </div>
+  </div>
+
+  <div class="row text-center" id="quote">
+    <blockquote id="blockquote">
+      <h3>“If your mind carries a heavy burden of past, you will experience more of the same. The past perpetuates itself through lack of presence. The quality of your consciousness at this moment is what shapes the future.” </h3>
+      <h4>- Eckhart Tolle</h4>
+    </blockquote>
+
+    <div class="row text-center">
+      <a href="/sub_categories"><i id="main-icon" class="fa fa-arrow-right fa-2x">Begin</i></a>
+    </div>
+  </div>
+</template>
+
+<template name="SubCategories">
+      <div class="row text-center" id="sc-new">
+        <h5><a href="/">Home</a></h5>
+      <h5><a href="/new_sub_category">New Sub Category</a></h5>
+      </div>
+    {{#each subCategories}}
+      <a id="home-page-link" href="{{url}}">
+        <div style="background-image: url(/cfs/files/images/{{ picture }})" class="row text-center home-tiles">
+          <h3>{{name}}</h3>
+          <h5>{{description}}</h5>
+          <img src="" alt="" />
+        </div>
+      </a>
+    {{/each}}
+</template>
+
+<template name="createSubCat">
+   <div class="container">
+     <div class="row">
+       <button class="btn btn-default" id="back-to-sub-button">Back</button>
+     </div>
+     <div class="row">
+       <div class="col-md-6 col-md-offset-3">
+         {{> quickForm collection="SubCategories" id="insertSubCategories" type="insert"}}
+       </div>
+     </div>
+   </div>
+</template>

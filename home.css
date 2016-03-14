@@ -1,0 +1,51 @@
+.home-tiles {
+  height: 450px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#quote {
+  height: 600px;
+  background-color: #4B6F9E;
+}
+
+#blockquote {
+  margin-top: 50px;
+  color: white;
+}
+
+#sc-new{
+  background-color: #4AAF70;
+}
+
+#home-page-link{
+  text-decoration: none;
+  color: white;
+}
+
+#home-page-link h3 {
+  font-size: 72px;
+}
+
+#home-page-link h5 {
+  font-size: 36px;
+}
+
+.header {
+  background-color: #4AAF70;
+  height: 300px;
+  color: white;
+}
+
+.header h1 {
+  font-size: 68px;
+}
+
+a #main-icon {
+  margin-top: 75px;
+  color: white;
+}
+
+.header a {
+  color: #4C42A0;
+}
